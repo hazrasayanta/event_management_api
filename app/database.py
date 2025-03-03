@@ -36,8 +36,8 @@ def init_db():
         new_user = User(username="testuser", email="testuser@example.com", password=hashed_password)
         db.add(new_user)
         db.commit()
-        print("✅ Test user created: testuser / testpassword")
+        print("Test user created: testuser / testpassword")
     else:
-        print("ℹ️ Test user already exists.")
+        print("Test user already exists.")
 
     db.close()
